@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="es">
+	<meta charset="utf-8">
+	<title>calculadora de propinas</title>
+  <link rel="stylesheet" href="calcu.css">
+
+</head>
+<body>
+	<h1>CALCULA TU PROPINA</h1>
+	<form action>
+		<h4>Cuenta a pagar</h4>
+		<input type = "text" id="cuenta" placeholder = "Total de cuenta">
+		<h4>¿Cuánto es su propina?</h4>
+		<select id = "propina">
+			<option id="value1" value = 0.1>10% de propina</option>
+			<option id="value2" value = 0.15>15% de propina</option>
+			<option id="value3" value = 0.2>20% de propina</option>
+			<option id="value4" value = 0.3>30% de propina</option>
+		</select>
+		<h4>Cantidad de personas a dividir cuenta</h4>
+		<input type = "numeric"	id= "personas" placeholder = "Número de personas">
+	</form>
+	<br>
+	<br>
+
+	<button onclick="calcularPropina()">Calcular</button>
+
+	<div id = "resutado"></div>
+
+	<script scr="calcular.js"></script>
+
+</body>
+</html>
